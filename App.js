@@ -3,10 +3,16 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Constants from 'expo-constants';
 
+//exemplos
+
+import Exemplo01 from './src/exemplos/exemplo-01';
+
+//atividades
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>pão de queijo</Text>
+      <Exemplo01/>
       <StatusBar style="auto" />
     </View>
   );
