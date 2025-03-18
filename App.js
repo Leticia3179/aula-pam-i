@@ -9,6 +9,8 @@ import Exemplo01 from './src/exemplos/exemplo-01';
 
 //atividades
 
+import Atividade01 from './src/atividade/atividade-01';
+
 export default function App() {
   return (
     <View style={styles.container}>
