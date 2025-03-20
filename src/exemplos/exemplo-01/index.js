@@ -14,7 +14,7 @@ function Exemplo1() {
             </Text>
 
             <Text style={styles.texto}>
-                O <Text style={styles.destaque}>React Native</Text> é uma biblioteca desenvolvida pelo Facebook que permite criar aplicativos móveis nativos usando JavaScript e React.
+                 <Text style={styles.destaque}>React Native</Text> é uma biblioteca desenvolvida pelo Facebook que permite criar aplicativos móveis nativos usando JavaScript e React.
             </Text>
         </View>
     );
