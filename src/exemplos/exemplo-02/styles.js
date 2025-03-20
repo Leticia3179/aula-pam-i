@@ -43,18 +43,6 @@ const styles = StyleSheet.create({
     color: '#34495e',  // Cor da lista mais neutra
     marginBottom: 8,  // Espaçamento entre os itens da lista
   },
-
-
-  container: {
-    padding: 20,
-    margin: 10,
-    borderWidth: 2,   // Definindo a largura da borda
-    borderColor: '#000', // Cor da borda
-    borderRadius: 10,   // Bordas arredondadas (opcional)
-    backgroundColor: '#f9f9f9', // Cor de fundo opcional
-},
-
-
 });
 
 export default styles;
