@@ -9,6 +9,19 @@ const styles = StyleSheet.create({
        borderRadius:RFPercentage(1.5),
        alignItems:'center',
        width: '90%',
+       marginBottom: RFPercentage(1)
+       },
+
+       titulo:{
+       fontSize: RFPercentage(3.5),
+       fontWeight: 'bold',
+       color: 'orange',
+       },
+
+       mensagem:{
+              fontSize: RFPercentage(2),
+              color: '#222',
+
        },
 
 })
