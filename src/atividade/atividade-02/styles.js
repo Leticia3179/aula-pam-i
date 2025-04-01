@@ -23,23 +23,6 @@ const styles = StyleSheet.create({
         marginBottom: 50,
     },
 
-    imagemContainer: {
-        flexDirection: 'row',  
-        alignItems: 'center',
-        marginBottom: 50,  
-    },
-
-    imagem: {
-        width: 100,
-        height: 100,
-        marginRight: 10, 
-    },
-
-    descricao: {
-        fontSize: 19,
-        color: '#333',
-        fontWeight: 'bold',
-    },
 });
 
 export default styles;

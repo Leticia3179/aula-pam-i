@@ -2,39 +2,47 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 
 import styles from './styles'; 
+
 import img1 from '../../../assets/cachorro.jpg';
 import img2 from '../../../assets/gato.jpg';
 import img3 from '../../../assets/raposa.jpeg';
 import img4 from '../../../assets/urso.jpeg';
 
-import Mensagem from './card';
+import Card from './card';
 
 function Atividade02() {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>MINI LOJA DE PELUCIAS</Text>
             
-            <View style={styles.imagemContainer}>
-                <Image source={img1} style={styles.imagem} />
-                <Text style={styles.descricao}>Ursinho de cachorro</Text>
+            <Card style={styles.imagemContainer}>
+                titulo={'Ursinho de cachorro'}
+                descricao={'compra por favor'}
+                valor={'34,90'}
+                img={img1}
                 
-            </View>
+            </Card>
 
-            <View style={styles.imagemContainer}>
-                <Image source={img2} style={styles.imagem} />
-                <Text style={styles.descricao}>Ursinho de gato
-                </Text>
-            </View>
+            <Card style={styles.imagemContainer}>
+                titulo={'Ursinho de gato'}
+                descricao={'compra por favor'}
+                valor={'45,30'}
+                img={img2}
+            </Card>
 
-            <View style={styles.imagemContainer}>
-                <Image source={img3} style={styles.imagem} />
-                <Text style={styles.descricao}>Ursinho de raposa</Text>
-            </View>
+            <Card style={styles.imagemContainer}>
+            titulo={'Ursinho de raposa'}
+                descricao={'compra por favor'}
+                valor={'39,00'}
+                img={img3}
+            </Card>
 
-            <View style={styles.imagemContainer}>
-                <Image source={img4} style={styles.imagem} />
-                <Text style={styles.descricao}>Ursinho com laço rosa</Text>
-            </View>
+            <Card style={styles.imagemContainer}>
+                titulo={'Ursinho de pelucia'}
+                descricao={'compra por favor'}
+                valor={'56,00'}
+                img={img4}
+            </Card>
             
         </View>
     );
