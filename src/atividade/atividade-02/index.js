@@ -18,7 +18,7 @@ function Atividade02() {
             <Card style={styles.imagemContainer}>
                 titulo={'Ursinho de cachorro'}
                 descricao={'compra por favor'}
-                valor={'34,90'}
+                valor={'R$34,90'}
                 img={img1}
                 
             </Card>
@@ -26,21 +26,21 @@ function Atividade02() {
             <Card style={styles.imagemContainer}>
                 titulo={'Ursinho de gato'}
                 descricao={'compra por favor'}
-                valor={'45,30'}
+                valor={'R$45,30'}
                 img={img2}
             </Card>
 
             <Card style={styles.imagemContainer}>
             titulo={'Ursinho de raposa'}
                 descricao={'compra por favor'}
-                valor={'39,00'}
+                valor={'R$39,00'}
                 img={img3}
             </Card>
 
             <Card style={styles.imagemContainer}>
                 titulo={'Ursinho de pelucia'}
                 descricao={'compra por favor'}
-                valor={'56,00'}
+                valor={'R$56,00'}
                 img={img4}
             </Card>
             
