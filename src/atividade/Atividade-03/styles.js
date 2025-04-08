@@ -25,24 +25,19 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     }, 
     texto: {
-        fontSize: RFPercentage(2.2),  
-    }, 
-    botaoAlert: {
-        width: '75%',         
-        margin: RFPercentage(2),
-    
+        fontSize: RFPercentage(4),  
     }, 
     
     valor:{
-        color: 'blue',
-        fontSize: RFPercentage(4)
+        color: 'deepskyblue',
+        fontSize: RFPercentage(5)
     },
 
     botao:{
         backgroundColor: 'pink',
         width: '75%',
         borderRadius: RFPercentage(2),
-        padding: RFPercentage(1),
+        padding: RFPercentage(4),
         alignItems:'center', 
         justifyContent: 'center',
         margin: RFPercentage(1) ,

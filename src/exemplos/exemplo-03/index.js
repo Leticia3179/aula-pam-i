@@ -5,16 +5,44 @@ import styles from './styles';
 
 function Exemplo3() {
 
+    let numero = 0;
+
     const [num, setNum] = useState(0);
 
-    function handleAtualizaState () {
+    function handleIncrementa () {
         setNum(num + 1);
     }
 
-    const handleOutroJeitoFuncao = () => {
-        Alert.alert('Título', 'Texto mensagem', [
+    const handleExibeButton2 = () => {
+        Alert.alert(
+          'Alerta',
+          'Alguém clicou no botão!',
+          [
             {
-                text: 'Meu texto',
+              text: 'Sim',
+              onPress: () => Alert.alert('Mensagem', 'Clicou em Sim.'),
+              style: 'default',
+            },
+            {
+              text: 'Não',
+              onPress: () => Alert.alert('Mensagem', 'Clicou em Não.'),
+              style: 'default',
+            },
+            {
+              text: 'Cancelar',
+              onPress: () => Alert.alert('Mensagem', 'Clicou em Cancelar.'),
+              style: 'default',
+            },
+          ]
+        );
+      };
+
+
+
+    const handleOutroJeitoFuncao = () => {
+        Alert.alert('Alerta', 'Texto mensagem', [
+            {
+                text: 'ok',
                 onPress: () => Alert.alert('Tchau'),
                 style: 'default',
             },
@@ -30,13 +58,14 @@ function Exemplo3() {
                     onPress={handleOutroJeitoFuncao}
                     title="Alerta"
                     color="deepskyblue"
-                    accessibilityLabel="Mensagem de alerta"                     
+                    accessibilityLabel="alguem clicou no botão"                     
                 />
             </View>
 
-            <Text style={styles.numero}>{num}</Text> 
 
-            <TouchableOpacity style={styles.botao} onPress={handleAtualizaState}>
+            <Text style={styles.valor}>{num}</Text> 
+
+            <TouchableOpacity style={styles.botao} onPress={handleIncrementa}>
                 <Text style={styles.txtBotao}>Adicionar +1</Text>
             </TouchableOpacity>
 
