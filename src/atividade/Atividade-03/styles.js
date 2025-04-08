@@ -29,8 +29,9 @@ const styles = StyleSheet.create({
     }, 
     
     valor:{
-        color: 'deepskyblue',
-        fontSize: RFPercentage(5)
+        color: 'deeppink',
+        fontSize: RFPercentage(5),
+        fontWeight: 'bold'
     },
 
     botao:{
