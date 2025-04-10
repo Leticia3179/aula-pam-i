@@ -31,18 +31,21 @@ function Atividade03() {
             <View style={styles.botaoAlert}>
 
             </View>
-
-            <Text style={styles.valor}>{num}</Text>
+            <View style={styles.containerHorizontal}>
+            
 
             {/* Botão para aumentar */}
             <TouchableOpacity style={styles.botao} onPress={handleIncrementa}>
                 <Text style={styles.txtBotao}>Adicionar +1</Text>
             </TouchableOpacity>
 
+            <Text style={styles.valor}>{num}</Text>
+
             {/* Botão para diminuir */}
             <TouchableOpacity style={styles.botao} onPress={handleDecrementa}>
                 <Text style={styles.txtBotao}>Diminuir -1</Text>
             </TouchableOpacity>
+            </View>
 
             {/* Botão para resetar */}
             <TouchableOpacity style={styles.botao} onPress={handleReset}>

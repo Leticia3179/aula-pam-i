@@ -36,9 +36,9 @@ const styles = StyleSheet.create({
 
     botao:{
         backgroundColor: 'pink',
-        width: '75%',
-        borderRadius: RFPercentage(2),
-        padding: RFPercentage(4),
+        width: '50%',
+        borderRadius: RFPercentage(1.5),
+        padding: RFPercentage(1.5),
         alignItems:'center', 
         justifyContent: 'center',
         margin: RFPercentage(1) ,
@@ -48,8 +48,16 @@ const styles = StyleSheet.create({
     txtBotao:{
      fontSize: RFPercentage(2),
      fontWeight: 'bold', 
-     color:'#fafafa'
+     color:'#fafafa',
+     
 
+    },
+
+    containerHorizontal: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        width: '70%'
     }
 });
 
