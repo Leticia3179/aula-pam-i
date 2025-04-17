@@ -3,7 +3,7 @@ import { View, Text, Button, Alert, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
-function Exemplo3() {
+function Exemplo03() {
 
     let numero = 0;
 
@@ -73,5 +73,5 @@ function Exemplo3() {
     );
 }
 
-export default Exemplo3;
+export default Exemplo03;
 

@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native';
 import styles from './styles';  // Certifique-se de ter o arquivo de estilos correto
 
-function Exemplo1() {
+function Exemplo01() {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 1</Text>
@@ -20,5 +20,5 @@ function Exemplo1() {
     );
 }
 
-export default Exemplo1;
+export default Exemplo01;
 

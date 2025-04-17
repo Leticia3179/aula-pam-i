@@ -76,6 +76,16 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'black'
       },
+
+      label:{
+        fontSize: RFPercentage(2.5),
+        color: 'darkslategrey',
+        alignSelf: 'flex-start',
+        marginLeft: '5%',
+        marginTop: RFPercentage(1),
+        fontWeight: 'bold',
+        color: 'blackPink'
+      }
       
   
 });
