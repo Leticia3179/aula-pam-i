@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';  
 
-function Atividade04() {
+function exemplo04() {
 
     const [txtDigitado, setTxtDigitado] = useState('');
     const [valorVisualizar, setValorVisualizar] = useState('');
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 4</Text>
+            <Text style={styles.titulo}>exemplo 4</Text>
             <Text style={styles.texto}>{txtDigitado}</Text>
 
             <TextInput style={styles.TxtInput} 
@@ -30,4 +30,4 @@ function Atividade04() {
     );
 }
 
-export default Atividade04;
+export default exemplo04;
