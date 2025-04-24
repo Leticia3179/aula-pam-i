@@ -64,12 +64,12 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2),
         fontWeight: 'bold',
     },
-    operationContainer: {
+    operacaoContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
         marginTop: 10,
     },
-    operationButton: {
+    operacaoButton: {
         backgroundColor: 'deepskyblue',
         paddingVertical: 8,
         paddingHorizontal: 14,

@@ -56,27 +56,27 @@ function Exemplo05() {
             />
 
             <Text style={[styles.texto, { marginTop: 10 }]}>Operação</Text>
-            <View style={styles.operationContainer}>
+            <View style={styles.operacaoContainer}>
                 <TouchableOpacity
-                    style={styles.operationButton}
+                    style={styles.operacaoButton}
                     onPress={() => setOperation('+')}
                 >
                     <Text style={styles.textButton}>+</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.operationButton}
+                    style={styles.operacaoButton}
                     onPress={() => setOperation('-')}
                 >
                     <Text style={styles.textButton}>-</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.operationButton}
+                    style={styles.operacaoButton}
                     onPress={() => setOperation('*')}
                 >
                     <Text style={styles.textButton}>*</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.operationButton}
+                    style={styles.operacaoButton}
                     onPress={() => setOperation('/')}
                 >
                     <Text style={styles.textButton}>/</Text>
