@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
-function Exemplo05() {
+function Atividade05() {
     const [num1, setNum1] = useState('');
     const [num2, setNum2] = useState('');
     const [result, setResult] = useState('');
@@ -44,7 +44,7 @@ function Exemplo05() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Exemplo 05</Text>
+            <Text style={styles.titulo}>Atividade 05</Text>
             <Text style={styles.tituloCalculadora}>Calculadora Básica</Text>
 
             <Text style={styles.texto}>1° número</Text>
@@ -120,4 +120,4 @@ function Exemplo05() {
     );
 }
 
-export default Exemplo05;
+export default Atividade05;
