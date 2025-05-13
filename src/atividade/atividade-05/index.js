@@ -1,123 +1,51 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
+import { View, Text } from 'react-native'; 
+
+import Input from './input'; 
+import Botao from './botao';
+
 import styles from './styles';
 
-function Atividade05() {
-    const [num1, setNum1] = useState('');
-    const [num2, setNum2] = useState('');
-    const [result, setResult] = useState('');
-    const [operation, setOperation] = useState('+');
+export default function Atividade5() {
 
-    const handleCalculate = () => {
-        const num1Float = parseFloat(num1);
-        const num2Float = parseFloat(num2);
+    const [n1, setN1] = useState(0);
+    const [n2, setN2] = useState(0);
+    const [total, setTotal] = useState(0);
 
-        if (isNaN(num1Float) || isNaN(num2Float)) {
-            setResult('Por favor, insira números válidos');
-            return;
-        }
-
-        let calculation;
-        switch (operation) {
-            case '+':
-                calculation = num1Float + num2Float;
-                break;
-            case '-':
-                calculation = num1Float - num2Float;
-                break;
-            case '*':
-                calculation = num1Float * num2Float;
-                break;
-            case '/':
-                if (num2Float === 0) {
-                    setResult('Não é possível dividir por zero');
-                    return;
-                }
-                calculation = num1Float / num2Float;
-                break;
-            default:
-                calculation = 0;
-        }
-
-        setResult(calculation.toString());
-    };
+    function handleZerar() {
+        setN1(0);
+        setN2(0);
+        setTotal(0);
+    }
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 05</Text>
-            <Text style={styles.tituloCalculadora}>Calculadora Básica</Text>
+            <Text style={styles.titulo}> Exemplo 5 </Text>
 
-            <Text style={styles.texto}>1° número</Text>
-            <TextInput
-                style={styles.txtEntrada}
-                value={num1}
-                onChangeText={setNum1}
-                keyboardType="numeric"
-            />
+            <Text style={styles.txtSaida}> Calculadora básica </Text>
 
-            <Text style={[styles.texto, { marginTop: 10 }]}>Operação</Text>
-            <View style={styles.operacaoContainer}>
-                <TouchableOpacity
-                    style={styles.operacaoButton}
-                    onPress={() => setOperation('+')}
-                >
-                    <Text style={styles.textButton}>+</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.operacaoButton}
-                    onPress={() => setOperation('-')}
-                >
-                    <Text style={styles.textButton}>-</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.operacaoButton}
-                    onPress={() => setOperation('*')}
-                >
-                    <Text style={styles.textButton}>*</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.operacaoButton}
-                    onPress={() => setOperation('/')}
-                >
-                    <Text style={styles.textButton}>/</Text>
-                </TouchableOpacity>
-            </View>
+            <Text style={styles.textLabel}> 1º número </Text>
+            <Input onChangeText={setN1} value={n1} />
 
-            <Text style={[styles.texto, { marginTop: 10 }]}>2° número</Text>
-            <TextInput
-                style={styles.txtEntrada}
-                value={num2}
-                onChangeText={setNum2}
-                keyboardType="numeric"
-            />
+            <Text style={styles.txtSaida}> + </Text>
 
-            <Text style={[styles.texto, { marginTop: 10 }]}>= </Text>
+            <Text style={styles.textLabel}> 2º número </Text>
+            <Input onChangeText={setN2} value={n2} />
 
-            <Text style={styles.texto}>Total</Text>
-            <TextInput
-                style={styles.txtEntrada}
-                value={result}
-                editable={false}
-            />
+            <Text style={[styles.txtSaida, { margin: 0 }]}> = </Text>
 
-            <TouchableOpacity style={styles.button} onPress={handleCalculate}>
-                <Text style={styles.textButton}>Calcular</Text>
-            </TouchableOpacity>
+            <Text style={styles.textLabel}> Total </Text>
+            <Input value={parseFloat(total).toFixed(2)} total />
 
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => {
-                        setNum1('');
-                        setNum2('');
-                        setResult('');
-                    }}
-                >
-                    <Text style={styles.textButton}>Limpar</Text>
-                </TouchableOpacity>
-            </View>
+            <View style={styles.ladoAlado}>
+                <Botao n1={n1} n2={n2} atualizaTotal={setTotal}>+</Botao>        
+                <Botao n1={n1} n2={n2} atualizaTotal={setTotal}>-</Botao>        
+                <Botao n1={n1} n2={n2} atualizaTotal={setTotal}>*</Botao>        
+                <Botao n1={n1} n2={n2} atualizaTotal={setTotal}>/</Botao>        
+            </View>   
+
+            <Botao onPress={handleZerar}>Zerar</Botao>         
+
         </View>
     );
 }
-
-export default Atividade05;
