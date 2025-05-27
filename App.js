@@ -12,7 +12,7 @@ import Exemplo02 from './src/exemplos/exemplo-02';
 import Exemplo03 from './src/exemplos/exemplo-03';
 import Exemplo04 from './src/exemplos/exemplo-04';
 import Exemplo05 from './src/exemplos/exemplo-05';
-import Exemplo07 from './src/exemplos/exemplo-07';
+import Exemplo7 from './src/exemplos/exemplo-07';
 
 //atividades
 
@@ -22,13 +22,14 @@ import Atividade03 from './src/atividade/Atividade-03';
 import Atividade04 from './src/atividade/Atividade-04';
 import Atividade05 from './src/atividade/atividade-05';
 import Atividade06 from './src/atividade/atividade-06';
-import Atividade07 from './src/atividade/atividade-07';
+import Atividade7 from './src/atividade/atividade-07';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade07 />
+      <Atividade7 />
       <StatusBar style="auto" />
     </View>
   );
