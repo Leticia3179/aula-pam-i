@@ -7,8 +7,7 @@ import AddItem from './addItem';
 
 import styles from './styles';
 
-export default function Atividade7() {
-
+export default function Exemplo8() {
 
     const [items, setItems] = useState([
         { id: uuid.v4(), text: 'Leite integral' },
@@ -37,7 +36,7 @@ export default function Atividade7() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>atividade 7</Text>
+            <Text style={styles.titulo}>Exemplo 8</Text>
             <Text style={styles.cabecalho}>Lista de compras</Text>
             <AddItem addItems={addItems} />
             <FlatList

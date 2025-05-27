@@ -16,14 +16,7 @@ export default function AddItem({ addItems }) {
                 onChangeText={ txt => setText(txt)} 
                 value={text}
             />
-            <TouchableOpacity 
-            style={styles.button} 
-            onPress={() => {
-                addItems(text);
-                setText('');
-            }}
-            >
-            addItems(text)
+            <TouchableOpacity style={styles.button} onPress={() => addItems(text)}>
                 <Text style={styles.buttonText}>
                     <MaterialCommunityIcons 
                         name="plus" 
